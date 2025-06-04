@@ -94,30 +94,8 @@
   }
 }
 
-/* Custom animations */
+/* Super slow motion custom animations */
 @keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes scale-in {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes slide-up {
   from {
     opacity: 0;
     transform: translateY(30px);
@@ -128,52 +106,120 @@
   }
 }
 
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 .animate-fade-in {
-  animation: fade-in 0.6s ease-out forwards;
+  animation: fade-in 1.5s ease-out forwards;
 }
 
 .animate-scale-in {
-  animation: scale-in 0.4s ease-out forwards;
+  animation: scale-in 1.2s ease-out forwards;
 }
 
 .animate-slide-up {
-  animation: slide-up 0.5s ease-out forwards;
+  animation: slide-up 1.8s ease-out forwards;
 }
 
-/* Animation delays */
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Super slow animation delays */
 .animation-delay-300 {
-  animation-delay: 300ms;
-}
-
-.animation-delay-600 {
   animation-delay: 600ms;
 }
 
-.animation-delay-900 {
-  animation-delay: 900ms;
-}
-
-.animation-delay-1200 {
+.animation-delay-600 {
   animation-delay: 1200ms;
 }
 
+.animation-delay-900 {
+  animation-delay: 1800ms;
+}
+
+.animation-delay-1200 {
+  animation-delay: 2400ms;
+}
+
 .animation-delay-1500 {
-  animation-delay: 1500ms;
+  animation-delay: 3000ms;
 }
 
 .animation-delay-1000 {
-  animation-delay: 1000ms;
-}
-
-.animation-delay-2000 {
   animation-delay: 2000ms;
 }
 
-/* Skill items animation */
+.animation-delay-2000 {
+  animation-delay: 4000ms;
+}
+
+/* Custom animation duration utilities */
+.animation-duration-\[2s\] {
+  animation-duration: 2s;
+}
+
+.animation-duration-\[3s\] {
+  animation-duration: 3s;
+}
+
+.animation-duration-\[4s\] {
+  animation-duration: 4s;
+}
+
+.animation-duration-\[6s\] {
+  animation-duration: 6s;
+}
+
+.animation-duration-\[8s\] {
+  animation-duration: 8s;
+}
+
+.animation-duration-\[1500ms\] {
+  animation-duration: 1500ms;
+}
+
+.animation-duration-\[2000ms\] {
+  animation-duration: 2000ms;
+}
+
+.animation-duration-\[3000ms\] {
+  animation-duration: 3000ms;
+}
+
+/* Skill items super slow animation */
 .skill-item {
   opacity: 0;
-  transform: translateX(-20px);
-  animation: slide-up 0.6s ease-out forwards;
+  transform: translateX(-30px);
+  animation: slide-up 2s ease-out forwards;
 }
 
 /* Smooth scroll behavior */
@@ -187,34 +233,34 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: #f8f9fa;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #3b82f6, #8b5cf6);
+  background: linear-gradient(180deg, #6b7280, #374151);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #2563eb, #7c3aed);
+  background: linear-gradient(180deg, #4b5563, #1f2937);
 }
 
 /* Loading animation for images */
 img {
-  transition: opacity 0.3s ease;
+  transition: opacity 0.8s ease;
 }
 
-/* Hover effects */
+/* Super slow hover effects */
 .hover-lift:hover {
-  transform: translateY(-5px);
-  transition: transform 0.3s ease;
+  transform: translateY(-8px);
+  transition: transform 1s ease;
 }
 
 /* Gradient text animation */
 .gradient-text {
-  background: linear-gradient(45deg, #3b82f6, #8b5cf6, #06b6d4);
+  background: linear-gradient(45deg, #6b7280, #374151, #9ca3af);
   background-size: 200% 200%;
-  animation: gradient-shift 3s ease infinite;
+  animation: gradient-shift 8s ease infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -236,6 +282,20 @@ img {
 button:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-  outline: 2px solid #3b82f6;
+  outline: 2px solid #6b7280;
   outline-offset: 2px;
+}
+
+/* Super slow pulse animation */
+@keyframes super-slow-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.animate-super-slow-pulse {
+  animation: super-slow-pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }

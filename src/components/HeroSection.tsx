@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { ChevronDown, Github, Linkedin } from "lucide-react";
+import { ChevronDown, Github, Linkedin, Mail, MessageCircle } from "lucide-react";
 
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
@@ -14,9 +14,9 @@ const HeroSection = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background pattern */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-transparent to-purple-50/50"></div>
-      <div className="absolute top-0 left-0 w-full h-full opacity-40" style={{
-        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-50/50 via-transparent to-gray-100/50"></div>
+      <div className="absolute top-0 left-0 w-full h-full opacity-20" style={{
+        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23E5E5E5' fill-opacity='0.4'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
       }}></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -24,62 +24,69 @@ const HeroSection = () => {
           {/* Profile Image */}
           <div className="lg:order-2 relative">
             <div className="relative w-80 h-80 mx-auto">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full animate-pulse opacity-20"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-gray-200 to-gray-300 rounded-full animate-pulse opacity-30 animation-duration-[8s]"></div>
               <img
-                src="/lovable-uploads/98538b36-6367-4c26-9295-90df03b5245e.png"
+                src="https://i.ibb.co/wZnbCLf3/image.png"
                 alt="Jashwanth Boddupally"
-                className="relative z-10 w-full h-full object-cover rounded-full border-4 border-white shadow-2xl hover:scale-105 transition-transform duration-300"
+                className="relative z-10 w-full h-full object-cover rounded-full border-4 border-white shadow-2xl hover:scale-105 transition-transform duration-[2000ms] ease-out"
               />
-              <div className="absolute -top-4 -right-4 w-8 h-8 bg-green-400 rounded-full animate-bounce"></div>
-              <div className="absolute -bottom-2 -left-2 w-6 h-6 bg-blue-400 rounded-full animate-pulse"></div>
+              <div className="absolute -top-4 -right-4 w-8 h-8 bg-gray-400 rounded-full animate-bounce animation-duration-[6s]"></div>
+              <div className="absolute -bottom-2 -left-2 w-6 h-6 bg-gray-500 rounded-full animate-pulse animation-duration-[4s]"></div>
             </div>
           </div>
 
           {/* Content */}
           <div className="lg:order-1 flex-1 text-left">
-            <div className="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium mb-6 animate-fade-in">
+            <div className="inline-block px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium mb-6 animate-fade-in animation-duration-[3s]">
               👋 Welcome to my portfolio
             </div>
             
-            <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 mb-6 animate-fade-in animation-delay-300">
+            <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 mb-6 animate-fade-in animation-delay-300 animation-duration-[3s]">
               Hi, I'm{" "}
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-gray-600 to-gray-800 bg-clip-text text-transparent">
                 Jashwanth
               </span>
             </h1>
             
-            <h2 className="text-2xl lg:text-3xl text-gray-600 mb-8 animate-fade-in animation-delay-600">
+            <h2 className="text-2xl lg:text-3xl text-gray-600 mb-8 animate-fade-in animation-delay-600 animation-duration-[3s]">
               AI Engineer & Web Developer
             </h2>
             
-            <p className="text-xl text-gray-600 mb-10 max-w-2xl animate-fade-in animation-delay-900">
+            <p className="text-xl text-gray-600 mb-10 max-w-2xl animate-fade-in animation-delay-900 animation-duration-[3s]">
               Final-year B.Tech CSE (AI & ML) student passionate about building intelligent systems 
               and interactive web experiences. Specializing in AI/ML, Python, React.js, and modern web technologies.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-in animation-delay-1200">
+            <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-in animation-delay-1200 animation-duration-[3s]">
               <Button 
                 onClick={() => scrollToSection("portfolio")}
-                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-lg font-medium transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+                className="bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-800 hover:to-black text-white px-8 py-3 rounded-lg font-medium transition-all duration-[1500ms] hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 View My Work
               </Button>
               <Button 
                 variant="outline"
                 onClick={() => scrollToSection("contact")}
-                className="border-2 border-gray-300 hover:border-blue-500 px-8 py-3 rounded-lg font-medium transition-all duration-300 hover:scale-105"
+                className="border-2 border-gray-300 hover:border-gray-500 px-8 py-3 rounded-lg font-medium transition-all duration-[1500ms] hover:scale-105"
               >
                 Get In Touch
+              </Button>
+              <Button 
+                variant="outline"
+                onClick={() => window.open("https://drive.google.com/file/d/1IzHmmV0DJNk_DmHP_1FFtjrjR9tHDWMW/view?usp=sharing", "_blank")}
+                className="border-2 border-gray-400 bg-gray-50 hover:bg-gray-100 hover:border-gray-600 px-8 py-3 rounded-lg font-medium transition-all duration-[1500ms] hover:scale-105"
+              >
+                My Resume
               </Button>
             </div>
 
             {/* Social Links */}
-            <div className="flex gap-4 animate-fade-in animation-delay-1500">
+            <div className="flex gap-4 animate-fade-in animation-delay-1500 animation-duration-[3s]">
               <a
                 href="https://linkedin.com/in/jashwanth-boddupally"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200"
+                className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-[1500ms] hover:scale-110 border border-gray-200"
               >
                 <Linkedin className="w-6 h-6 text-blue-600" />
               </a>
@@ -87,9 +94,35 @@ const HeroSection = () => {
                 href="https://github.com/jashwanth-boddupally"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200"
+                className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-[1500ms] hover:scale-110 border border-gray-200"
               >
                 <Github className="w-6 h-6 text-gray-800" />
+              </a>
+              <a
+                href="mailto:jashwanthboddupally@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-[1500ms] hover:scale-110 border border-gray-200"
+              >
+                <Mail className="w-6 h-6 text-red-600" />
+              </a>
+              <a
+                href="https://www.instagram.com/jash_you_x_x/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-[1500ms] hover:scale-110 border border-gray-200"
+              >
+                <div className="w-6 h-6 bg-gradient-to-r from-purple-500 to-pink-500 rounded-sm flex items-center justify-center">
+                  <span className="text-white text-xs font-bold">📷</span>
+                </div>
+              </a>
+              <a
+                href="https://wa.me/919010767269"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-[1500ms] hover:scale-110 border border-gray-200"
+              >
+                <MessageCircle className="w-6 h-6 text-green-600" />
               </a>
             </div>
           </div>
@@ -98,7 +131,7 @@ const HeroSection = () => {
         {/* Scroll indicator */}
         <button
           onClick={() => scrollToSection("about")}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce animation-duration-[4s]"
         >
           <ChevronDown className="w-8 h-8 text-gray-400" />
         </button>
