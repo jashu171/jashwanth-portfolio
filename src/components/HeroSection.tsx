@@ -44,12 +44,12 @@ const HeroSection = () => {
             <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 mb-6 animate-fade-in animation-delay-300 animation-duration-[3s]">
               Hi, I'm{" "}
               <span className="bg-gradient-to-r from-gray-600 to-gray-800 bg-clip-text text-transparent">
-                Jashwanth
+                Jashwanth Boddupally
               </span>
             </h1>
             
             <h2 className="text-2xl lg:text-3xl text-gray-600 mb-8 animate-fade-in animation-delay-600 animation-duration-[3s]">
-              AI Engineer & Web Developer
+              AI Engineer | Python Developer | Web Developer
             </h2>
             
             <p className="text-xl text-gray-600 mb-10 max-w-2xl animate-fade-in animation-delay-900 animation-duration-[3s]">

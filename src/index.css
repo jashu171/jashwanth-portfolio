@@ -137,6 +137,18 @@
   }
 }
 
+/* Scroll-triggered animations */
+@keyframes scroll-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(60px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 .animate-fade-in {
   animation: fade-in 1.5s ease-out forwards;
 }
@@ -151,6 +163,10 @@
 
 .animate-float {
   animation: float 6s ease-in-out infinite;
+}
+
+.scroll-fade-in {
+  animation: scroll-fade-in 1.8s ease-out forwards;
 }
 
 /* Super slow animation delays */
@@ -222,9 +238,38 @@
   animation: slide-up 2s ease-out forwards;
 }
 
-/* Smooth scroll behavior */
+/* Smooth scroll behavior with enhanced smoothness */
 html {
   scroll-behavior: smooth;
+}
+
+/* Enhanced scroll animations for sections */
+@media (prefers-reduced-motion: no-preference) {
+  section {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: scroll-fade-in 2s ease-out forwards;
+  }
+  
+  section:nth-child(1) {
+    animation-delay: 0ms;
+  }
+  
+  section:nth-child(2) {
+    animation-delay: 200ms;
+  }
+  
+  section:nth-child(3) {
+    animation-delay: 400ms;
+  }
+  
+  section:nth-child(4) {
+    animation-delay: 600ms;
+  }
+  
+  section:nth-child(5) {
+    animation-delay: 800ms;
+  }
 }
 
 /* Custom scrollbar */
