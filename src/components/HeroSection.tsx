@@ -37,22 +37,22 @@ const HeroSection = () => {
 
           {/* Content */}
           <div className="lg:order-1 flex-1 text-left">
-            <div className="inline-block px-4 py-2 bg-sky-100 text-sky-700 rounded-full text-sm font-medium mb-6 animate-fade-in animation-duration-[3s]">
+            <div className="inline-block px-4 py-2 bg-sky-100 text-slate-600 rounded-full text-sm font-medium mb-6 animate-fade-in animation-duration-[3s]">
               👋 Welcome to my portfolio
             </div>
             
-            <h1 className="text-5xl lg:text-7xl font-bold text-sky-600 mb-6 animate-fade-in animation-delay-300 animation-duration-[3s]">
+            <h1 className="text-5xl lg:text-7xl font-bold text-slate-600 mb-6 animate-fade-in animation-delay-300 animation-duration-[3s]">
               Hi, I'm{" "}
-              <span className="bg-gradient-to-r from-sky-400 to-cyan-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-slate-500 to-slate-700 bg-clip-text text-transparent">
                 Jashwanth Boddupally
               </span>
             </h1>
             
-            <h2 className="text-2xl lg:text-3xl text-sky-500 mb-8 animate-fade-in animation-delay-600 animation-duration-[3s]">
+            <h2 className="text-2xl lg:text-3xl text-slate-500 mb-8 animate-fade-in animation-delay-600 animation-duration-[3s]">
               AI Engineer | Python Developer | Web Developer
             </h2>
             
-            <p className="text-xl text-sky-600 mb-10 max-w-2xl animate-fade-in animation-delay-900 animation-duration-[3s]">
+            <p className="text-xl text-slate-500 mb-10 max-w-2xl animate-fade-in animation-delay-900 animation-duration-[3s]">
               Final-year B.Tech CSE (AI & ML) student passionate about building intelligent systems 
               and interactive web experiences. Specializing in AI/ML, Python, React.js, and modern web technologies.
             </p>
@@ -60,21 +60,21 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-in animation-delay-1200 animation-duration-[3s]">
               <Button 
                 onClick={() => scrollToSection("portfolio")}
-                className="bg-gradient-to-r from-sky-500 to-cyan-600 hover:from-sky-600 hover:to-cyan-700 text-white px-8 py-3 rounded-lg font-medium transition-all duration-[1500ms] hover:scale-105 shadow-lg hover:shadow-xl"
+                className="bg-gradient-to-r from-slate-500 to-slate-700 hover:from-slate-600 hover:to-slate-800 text-white px-8 py-3 rounded-lg font-medium transition-all duration-[1500ms] hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 View My Work
               </Button>
               <Button 
                 variant="outline"
                 onClick={() => scrollToSection("contact")}
-                className="border-2 border-sky-300 hover:border-sky-500 text-sky-600 hover:text-sky-700 px-8 py-3 rounded-lg font-medium transition-all duration-[1500ms] hover:scale-105"
+                className="border-2 border-slate-400 hover:border-slate-600 text-slate-600 hover:text-slate-700 px-8 py-3 rounded-lg font-medium transition-all duration-[1500ms] hover:scale-105"
               >
                 Get In Touch
               </Button>
               <Button 
                 variant="outline"
                 onClick={() => window.open("https://drive.google.com/file/d/1IzHmmV0DJNk_DmHP_1FFtjrjR9tHDWMW/view?usp=sharing", "_blank")}
-                className="border-2 border-cyan-400 bg-cyan-50 hover:bg-cyan-100 hover:border-cyan-600 text-cyan-700 hover:text-cyan-800 px-8 py-3 rounded-lg font-medium transition-all duration-[1500ms] hover:scale-105"
+                className="border-2 border-slate-400 bg-slate-50 hover:bg-slate-100 hover:border-slate-600 text-slate-700 hover:text-slate-800 px-8 py-3 rounded-lg font-medium transition-all duration-[1500ms] hover:scale-105"
               >
                 My Resume
               </Button>
@@ -86,7 +86,7 @@ const HeroSection = () => {
                 href="https://linkedin.com/in/jashwanth-boddupally"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-[1500ms] hover:scale-110 border border-sky-200"
+                className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-[1500ms] hover:scale-110 border border-slate-200"
               >
                 <Linkedin className="w-6 h-6 text-blue-600" />
               </a>
@@ -94,15 +94,15 @@ const HeroSection = () => {
                 href="https://github.com/jashwanth-boddupally"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-[1500ms] hover:scale-110 border border-sky-200"
+                className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-[1500ms] hover:scale-110 border border-slate-200"
               >
-                <Github className="w-6 h-6 text-gray-800" />
+                <Github className="w-6 h-6 text-slate-700" />
               </a>
               <a
                 href="mailto:jashwanthboddupally@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-[1500ms] hover:scale-110 border border-sky-200"
+                className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-[1500ms] hover:scale-110 border border-slate-200"
               >
                 <Mail className="w-6 h-6 text-red-600" />
               </a>
@@ -110,7 +110,7 @@ const HeroSection = () => {
                 href="https://www.instagram.com/jash_you_x_x/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-[1500ms] hover:scale-110 border border-sky-200"
+                className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-[1500ms] hover:scale-110 border border-slate-200"
               >
                 <div className="w-6 h-6 bg-gradient-to-r from-purple-500 to-pink-500 rounded-sm flex items-center justify-center">
                   <span className="text-white text-xs font-bold">📷</span>
@@ -120,7 +120,7 @@ const HeroSection = () => {
                 href="https://wa.me/919010767269"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-[1500ms] hover:scale-110 border border-sky-200"
+                className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-[1500ms] hover:scale-110 border border-slate-200"
               >
                 <MessageCircle className="w-6 h-6 text-green-600" />
               </a>
@@ -133,7 +133,7 @@ const HeroSection = () => {
           onClick={() => scrollToSection("about")}
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce animation-duration-[4s]"
         >
-          <ChevronDown className="w-8 h-8 text-sky-400" />
+          <ChevronDown className="w-8 h-8 text-slate-400" />
         </button>
       </div>
     </section>
