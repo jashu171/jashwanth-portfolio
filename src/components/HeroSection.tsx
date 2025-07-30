@@ -29,9 +29,9 @@ const HeroSection = () => {
             <div className="lg:order-2 relative">
               <div className="relative w-96 h-96 mx-auto">
                 <img
-                  src="/lovable-uploads/8929fc30-000a-4554-b419-b37f7f38f087.png"
-                  alt="AI Engineer 3D Illustration"
-                  className="relative z-10 w-full h-full object-contain hover:scale-105 transition-transform duration-[2000ms] ease-out"
+                  src="/lovable-uploads/2d6173eb-9a6e-4b20-bf65-9eddd96664fb.png"
+                  alt="Jashwanth Boddupally Profile"
+                  className="relative z-10 w-full h-full object-cover rounded-3xl shadow-2xl hover:scale-105 transition-transform duration-[2000ms] ease-out"
                 />
                 <div className="absolute -top-4 -right-4 w-8 h-8 bg-primary rounded-full animate-bounce animation-duration-[6s]"></div>
                 <div className="absolute -bottom-2 -left-2 w-6 h-6 bg-accent rounded-full animate-pulse animation-duration-[4s]"></div>
